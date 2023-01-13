@@ -11,8 +11,20 @@
     "google-search-results-nodejs": "^2.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^1.0.7",
-    "web-vitals": "^2.1.4"
+    "react-scripts": "4.0.3",
+    "web-vitals": "^2.1.4",
+    "workbox-background-sync": "^6.5.4",
+    "workbox-broadcast-update": "^6.5.4",
+    "workbox-cacheable-response": "^6.5.4",
+    "workbox-core": "^6.5.4",
+    "workbox-expiration": "^6.5.4",
+    "workbox-google-analytics": "^6.5.4",
+    "workbox-navigation-preload": "^6.5.4",
+    "workbox-precaching": "^6.5.4",
+    "workbox-range-requests": "^6.5.4",
+    "workbox-routing": "^6.5.4",
+    "workbox-strategies": "^6.5.4",
+    "workbox-streams": "^6.5.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -38,6 +50,18 @@
     ]
   },
   "devDependencies": {
-    "immutability-helper": "^3.1.1"
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "http-server": "^14.1.1",
+    "https-browserify": "^1.0.0",
+    "immutability-helper": "^3.1.1",
+    "os-browserify": "^0.3.0",
+    "process": "^0.11.10",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0",
+    "workbox-strategies": "^6.5.4"
   }
 }

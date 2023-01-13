@@ -12,7 +12,8 @@ function App() {
     const [popupOverlay, setPopupOverlay] = useState(false);
 
     const [story, setStory] = useState([
-        {id: 0,
+        {
+            id: 0,
             fields: [
                 {title: "title", summary: "Een persoon zakt door 4 meter hoog dak van caravanstalling"},
                 {
@@ -26,8 +27,21 @@ function App() {
             ],
             sources: [
                 {id: 0, type: "contact", name: "Mark makker", email: "", telephone: "", summary: ""},
-                {id: 1,type: "pdf", name: "Onderzoek.pdf", origin: "ANP", author: "Mira Janssen", link: "https://www.bua.nl/media/16/9789024406937_-_nel_verhoeven_-_wat_is_onderzoek_zesde_druk_-_inkijkexemplaar.pdf"},
-                {id: 2,type: "location", name: "Studio Omroep Flevoland", city: "Lelystad", address: "Larserpoortweg 40, 8218 NK Lelystad"}
+                {
+                    id: 1,
+                    type: "pdf",
+                    name: "Onderzoek.pdf",
+                    origin: "ANP",
+                    author: "Mira Janssen",
+                    link: "https://www.bua.nl/media/16/9789024406937_-_nel_verhoeven_-_wat_is_onderzoek_zesde_druk_-_inkijkexemplaar.pdf"
+                },
+                {
+                    id: 2,
+                    type: "location",
+                    name: "Studio Omroep Flevoland",
+                    city: "Lelystad",
+                    address: "Larserpoortweg 40, 8218 NK Lelystad"
+                }
             ],
             tags: [
                 {id: 0, text: "Caravan"},
@@ -65,7 +79,8 @@ function App() {
                     <p style={{fontWeight: "500"}}>Stories</p>
                     <button>New Story +</button>
                     <div style={{display: "flex", flexDirection: "row", alignItems: "end"}}>
-                        <span style={{fontSize: "2.5vh", marginRight: "1vh", color: "black"}} className="material-icons">folder_copy</span>
+                        <span style={{fontSize: "2.5vh", marginRight: "1vh", color: "black"}}
+                              className="material-icons">folder_copy</span>
                         <p>STORIES</p>
                     </div>
                     <div style={{display: "flex", flexDirection: "row", alignItems: "end"}}>
@@ -84,16 +99,17 @@ function App() {
                         <p>RECENTLY ADDED</p>
                     </div>
                     <div style={{display: "flex", flexDirection: "row", alignItems: "end"}}>
-                        <span style={{fontSize: "2.5vh", marginRight: "1vh"}} className="material-icons">star_outline</span>
+                        <span style={{fontSize: "2.5vh", marginRight: "1vh"}}
+                              className="material-icons">star_outline</span>
                         <p>BOOKMARKS</p>
                     </div>
                     <div style={{display: "flex", flexDirection: "row", alignItems: "end"}}>
-                        <span style={{fontSize: "2.5vh", marginRight: "1vh"}} className="material-icons">perm_identity</span>
+                        <span style={{fontSize: "2.5vh", marginRight: "1vh"}}
+                              className="material-icons">perm_identity</span>
                         <p>CREATED BY ME</p>
                     </div>
                 </div>
             </div>
-
             <div className="side-container-right">
                 <img src={avatar}/>
                 <div className="button-container">
@@ -109,7 +125,6 @@ function App() {
                     <p>Contacts</p>
                 </div>
             </div>
-
             <SourcePopup
                 popupOverlay={popupOverlay}
                 setPopupOverlay={setPopupOverlay}
@@ -118,11 +133,9 @@ function App() {
                 story={story[0]}
                 tags={story[0].tags}
             />
-
             <div className="content container offset-md-2">
                 <br/>
                 <br/>
-
                 <Story
                     title={story[0]["fields"][0].summary}
                     fields={story[0].fields}

@@ -1,8 +1,6 @@
 import React, {useState} from "react";
 import '../App.css';
 
-
-//props staat voor properties en kunnen meegeven worden bij het aanmaken van een tweet component (zie app.js)
 function StoryField(props) {
     return (
         <div>
